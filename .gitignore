@@ -1,0 +1,15 @@
+# Xcode4
+xcuserdata
+
+# OS Generated Files
+.DS_Store
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
