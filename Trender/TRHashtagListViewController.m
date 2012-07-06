@@ -6,11 +6,16 @@
 //  Copyright (c) 2012 Trender. All rights reserved.
 //
 
+#import "TRFavorite.h"
+#import "TRFavoriteListViewController.h"
 #import "TRHashtagListViewController.h"
 
 #pragma mark - Interface
 
 @interface TRHashtagListViewController ()
+
+// TODO: explain why this should be weak
+@property (nonatomic, strong) TRFavoriteListViewController *favoriteListController;
 
 - (UITableViewCell *)configureFavoriteCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
 
@@ -20,7 +25,7 @@
 
 @implementation TRHashtagListViewController
 
-//synth the hash tag from the header
+@synthesize favoriteListController;
 @synthesize hashtags;
 
 //if view is not laoded
@@ -44,19 +49,36 @@
     }
 }
 
-   //check if view did load 
-- (void)viewDidLoad{
-    [super viewDidLoad];
+
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    [super prepareForSegue:segue sender:sender];
     
-    //create and populate array with pres'
-    NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:3];
-    [array addObject:@"#Ron Paul"];
-    [array addObject:@"#Mitt Romney"];
-    [array addObject:@"#Barak Obama"];
-    
-    //set @property hashtags to an array 
-    self.hashtags = array;
+    self.favoriteListController = [segue destinationViewController];
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if (self.favoriteListController != nil) {
+        TRFavorite *favorite = self.favoriteListController.selectedFavorite;
+        
+        self.hashtags = favorite.hashtags;
+        self.title = favorite.name;
+        
+        [self.tableView reloadData];
+    }
+    
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+}
+
+
+
+
+
+
+
 
 -(void)viewDidUnload {
     [super viewDidUnload];
@@ -74,7 +96,7 @@
 #pragma mark - protocal methods - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 3;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -84,10 +106,8 @@
     return [self configureFavoriteCell:cell forRowAtIndexPath:indexPath];
 }
 
-/*
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [self.hashtags count];
 }
-*/
 
 @end

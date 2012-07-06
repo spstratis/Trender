@@ -16,6 +16,7 @@
 
 #import <CoreGraphics/CoreGraphics.h>
 #import <Foundation/Foundation.h>
+#import <Twitter/Twitter.h>
 #import <UIKit/UIKit.h>
 
 #endif

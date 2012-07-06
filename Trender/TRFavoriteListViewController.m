@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 Trender. All rights reserved.
 //
 
+#import "TRFavorite.h"
 #import "TRFavoriteListViewController.h"
 
 #pragma mark - Interface
@@ -23,7 +24,7 @@
 #pragma mark - Instance Properties
 
 @synthesize favorites;
-@synthesize selectedHashtags;
+@synthesize selectedFavorite;
 
 #pragma mark - Overriden Method
 
@@ -32,7 +33,7 @@
     
     if (![self isViewLoaded]) {
         self.favorites = nil;
-        self.selectedHashtags = nil;
+        self.selectedFavorite = nil;
     }
 }
 
@@ -51,9 +52,26 @@
     [super viewDidLoad];
     
     // TODO: don't hardcode
+    NSMutableArray *hashtags1 = [[NSMutableArray alloc] initWithCapacity:3];
+    [hashtags1 addObject:@"#Ron Paul"];
+    [hashtags1 addObject:@"#Mitt Romney"];
+    [hashtags1 addObject:@"#Barak Obama"];
+    
+    TRFavorite *favorite1 = [[TRFavorite alloc] init];
+    favorite1.hashtags = hashtags1;
+    favorite1.name = @"Presidents";
+    
+    NSMutableArray *hashtags2 = [[NSMutableArray alloc] initWithCapacity:3];
+    [hashtags2 addObject:@"#Buger King"];
+    [hashtags2 addObject:@"#Taco Bell"];
+    
+    TRFavorite *favorite2 = [[TRFavorite alloc] init];
+    favorite2.hashtags = hashtags2;
+    favorite2.name = @"Restaurants";
+    
     NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:2];
-    [array addObject:@"Presidents"];
-    [array addObject:@"Restaurants"];
+    [array addObject:favorite1];
+    [array addObject:favorite2];
     
     self.favorites = array;
 }
@@ -65,7 +83,9 @@
 #pragma mark - Instance Method
 
 - (UITableViewCell *)configureFavoriteCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    cell.textLabel.text = [self.favorites objectAtIndex:indexPath.row];
+    TRFavorite *favorite = [self.favorites objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = favorite.name;
     
     return cell;
 }
@@ -90,7 +110,7 @@
 #pragma mark - Protocol Method - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // TODO: set selected hashtags
+    self.selectedFavorite = [self.favorites objectAtIndex:indexPath.row];
     
     [self.navigationController popViewControllerAnimated:YES];
 }

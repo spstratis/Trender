@@ -19,6 +19,8 @@
 		624CE0BA15A3BEE1005BFD2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 624CE0B415A3BEE1005BFD2D /* InfoPlist.strings */; };
 		624CE0BB15A3BEE1005BFD2D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624CE0B615A3BEE1005BFD2D /* MainStoryboard_iPad.storyboard */; };
 		624CE0BC15A3BEE1005BFD2D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624CE0B815A3BEE1005BFD2D /* MainStoryboard_iPhone.storyboard */; };
+		629C12FA15A7843000F27944 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629C12F915A7843000F27944 /* Twitter.framework */; };
+		629C130A15A79B3300F27944 /* TRFavorite.m in Sources */ = {isa = PBXBuildFile; fileRef = 629C130915A79B3300F27944 /* TRFavorite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,12 +35,15 @@
 		624CE0A915A3BED7005BFD2D /* Trender-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Trender-Prefix.pch"; path = "Trender/Trender-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		624CE0AA15A3BED7005BFD2D /* TRFavoriteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRFavoriteListViewController.h; path = Trender/TRFavoriteListViewController.h; sourceTree = SOURCE_ROOT; };
 		624CE0AB15A3BED7005BFD2D /* TRFavoriteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRFavoriteListViewController.m; path = Trender/TRFavoriteListViewController.m; sourceTree = SOURCE_ROOT; };
-		624CE0AC15A3BED7005BFD2D /* TRHashtagListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; name = TRHashtagListViewController.h; path = Trender/TRHashtagListViewController.h; sourceTree = SOURCE_ROOT; };
+		624CE0AC15A3BED7005BFD2D /* TRHashtagListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRHashtagListViewController.h; path = Trender/TRHashtagListViewController.h; sourceTree = SOURCE_ROOT; };
 		624CE0AD15A3BED7005BFD2D /* TRHashtagListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRHashtagListViewController.m; path = Trender/TRHashtagListViewController.m; sourceTree = SOURCE_ROOT; };
 		624CE0B515A3BEE1005BFD2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Trender/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		624CE0B715A3BEE1005BFD2D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Trender/en.lproj/MainStoryboard_iPad.storyboard; sourceTree = SOURCE_ROOT; };
 		624CE0B915A3BEE1005BFD2D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Trender/en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
 		624CE0BE15A3BF39005BFD2D /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
+		629C12F915A7843000F27944 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		629C130815A79B3300F27944 /* TRFavorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRFavorite.h; sourceTree = SOURCE_ROOT; };
+		629C130915A79B3300F27944 /* TRFavorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRFavorite.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +53,7 @@
 			files = (
 				624CE03715A38FC0005BFD2D /* CoreGraphics.framework in Frameworks */,
 				624CE03515A38FC0005BFD2D /* Foundation.framework in Frameworks */,
+				629C12FA15A7843000F27944 /* Twitter.framework in Frameworks */,
 				624CE03315A38FC0005BFD2D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +83,7 @@
 			children = (
 				624CE03615A38FC0005BFD2D /* CoreGraphics.framework */,
 				624CE03415A38FC0005BFD2D /* Foundation.framework */,
+				629C12F915A7843000F27944 /* Twitter.framework */,
 				624CE03215A38FC0005BFD2D /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -139,6 +146,8 @@
 		624CE0BF15A3BF40005BFD2D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				629C130815A79B3300F27944 /* TRFavorite.h */,
+				629C130915A79B3300F27944 /* TRFavorite.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -214,6 +223,7 @@
 				624CE0AF15A3BED7005BFD2D /* TRAppDelegate.m in Sources */,
 				624CE0B115A3BED7005BFD2D /* TRFavoriteListViewController.m in Sources */,
 				624CE0B215A3BED7005BFD2D /* TRHashtagListViewController.m in Sources */,
+				629C130A15A79B3300F27944 /* TRFavorite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

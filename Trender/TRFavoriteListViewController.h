@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class TRFavorite;
+
 #pragma mark - Interface
 
 @interface TRFavoriteListViewController : UITableViewController
 
 @property (nonatomic, strong) NSArray *favorites;
-@property (nonatomic, strong) NSArray *selectedHashtags;
+@property (nonatomic, strong) TRFavorite *selectedFavorite;
 
 @end
