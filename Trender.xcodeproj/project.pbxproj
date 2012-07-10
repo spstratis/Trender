@@ -21,6 +21,7 @@
 		624CE0BC15A3BEE1005BFD2D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624CE0B815A3BEE1005BFD2D /* MainStoryboard_iPhone.storyboard */; };
 		629C12FA15A7843000F27944 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629C12F915A7843000F27944 /* Twitter.framework */; };
 		629C130A15A79B3300F27944 /* TRFavorite.m in Sources */ = {isa = PBXBuildFile; fileRef = 629C130915A79B3300F27944 /* TRFavorite.m */; };
+		62C3D18115AB586B00DA97B7 /* TRHashtag.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C3D18015AB586B00DA97B7 /* TRHashtag.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		629C12F915A7843000F27944 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		629C130815A79B3300F27944 /* TRFavorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRFavorite.h; sourceTree = SOURCE_ROOT; };
 		629C130915A79B3300F27944 /* TRFavorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRFavorite.m; sourceTree = SOURCE_ROOT; };
+		62C3D17F15AB586B00DA97B7 /* TRHashtag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRHashtag.h; sourceTree = SOURCE_ROOT; };
+		62C3D18015AB586B00DA97B7 /* TRHashtag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRHashtag.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,8 @@
 			children = (
 				629C130815A79B3300F27944 /* TRFavorite.h */,
 				629C130915A79B3300F27944 /* TRFavorite.m */,
+				62C3D17F15AB586B00DA97B7 /* TRHashtag.h */,
+				62C3D18015AB586B00DA97B7 /* TRHashtag.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 				624CE0B115A3BED7005BFD2D /* TRFavoriteListViewController.m in Sources */,
 				624CE0B215A3BED7005BFD2D /* TRHashtagListViewController.m in Sources */,
 				629C130A15A79B3300F27944 /* TRFavorite.m in Sources */,
+				62C3D18115AB586B00DA97B7 /* TRHashtag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

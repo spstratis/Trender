@@ -8,6 +8,7 @@
 
 #import "TRFavorite.h"
 #import "TRFavoriteListViewController.h"
+#import "TRHashtag.h"
 
 #pragma mark - Interface
 
@@ -41,7 +42,7 @@
     UIDevice *device = [UIDevice currentDevice];
     
     if (device.userInterfaceIdiom == UIUserInterfaceIdiomPhone) {
-        return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
+        return (toInterfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
     }
     else {
         return YES;
@@ -51,19 +52,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // TODO: don't hardcode
+    // !!!: don't hardcode
+    TRHashtag *hashtag1 = [[TRHashtag alloc] init];
+    hashtag1.name = @"#Ron Paul";
+    
+    TRHashtag *hashtag2 = [[TRHashtag alloc] init];
+    hashtag2.name = @"#Mitt Romney";
+    
+    TRHashtag *hashtag3 = [[TRHashtag alloc] init];
+    hashtag3.name = @"#Barak Obama";
+    
     NSMutableArray *hashtags1 = [[NSMutableArray alloc] initWithCapacity:3];
-    [hashtags1 addObject:@"#Ron Paul"];
-    [hashtags1 addObject:@"#Mitt Romney"];
-    [hashtags1 addObject:@"#Barak Obama"];
+    [hashtags1 addObject:hashtag1];
+    [hashtags1 addObject:hashtag2];
+    [hashtags1 addObject:hashtag3];
     
     TRFavorite *favorite1 = [[TRFavorite alloc] init];
     favorite1.hashtags = hashtags1;
     favorite1.name = @"Presidents";
     
+    TRHashtag *hashtag4 = [[TRHashtag alloc] init];
+    hashtag4.name = @"#Buger King";
+    
+    TRHashtag *hashtag5 = [[TRHashtag alloc] init];
+    hashtag5.name = @"#Taco Bell";
+    
     NSMutableArray *hashtags2 = [[NSMutableArray alloc] initWithCapacity:3];
-    [hashtags2 addObject:@"#Buger King"];
-    [hashtags2 addObject:@"#Taco Bell"];
+    [hashtags2 addObject:hashtag4];
+    [hashtags2 addObject:hashtag5];
     
     TRFavorite *favorite2 = [[TRFavorite alloc] init];
     favorite2.hashtags = hashtags2;
@@ -72,6 +88,7 @@
     NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:2];
     [array addObject:favorite1];
     [array addObject:favorite2];
+    // !!!: don't hardcode
     
     self.favorites = array;
 }
