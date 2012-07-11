@@ -20,8 +20,8 @@
 		624CE0BB15A3BEE1005BFD2D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624CE0B615A3BEE1005BFD2D /* MainStoryboard_iPad.storyboard */; };
 		624CE0BC15A3BEE1005BFD2D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624CE0B815A3BEE1005BFD2D /* MainStoryboard_iPhone.storyboard */; };
 		629C12FA15A7843000F27944 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629C12F915A7843000F27944 /* Twitter.framework */; };
-		629C130A15A79B3300F27944 /* TRFavorite.m in Sources */ = {isa = PBXBuildFile; fileRef = 629C130915A79B3300F27944 /* TRFavorite.m */; };
-		62C3D18115AB586B00DA97B7 /* TRHashtag.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C3D18015AB586B00DA97B7 /* TRHashtag.m */; };
+		62C3D1D315AE2BF900DA97B7 /* TRFavorite.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C3D1D015AE2BF900DA97B7 /* TRFavorite.m */; };
+		62C3D1D415AE2BF900DA97B7 /* TRHashtag.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C3D1D215AE2BF900DA97B7 /* TRHashtag.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,10 +43,10 @@
 		624CE0B915A3BEE1005BFD2D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Trender/en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
 		624CE0BE15A3BF39005BFD2D /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
 		629C12F915A7843000F27944 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
-		629C130815A79B3300F27944 /* TRFavorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRFavorite.h; sourceTree = SOURCE_ROOT; };
-		629C130915A79B3300F27944 /* TRFavorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRFavorite.m; sourceTree = SOURCE_ROOT; };
-		62C3D17F15AB586B00DA97B7 /* TRHashtag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRHashtag.h; sourceTree = SOURCE_ROOT; };
-		62C3D18015AB586B00DA97B7 /* TRHashtag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRHashtag.m; sourceTree = SOURCE_ROOT; };
+		62C3D1CF15AE2BF900DA97B7 /* TRFavorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRFavorite.h; path = Trender/TRFavorite.h; sourceTree = SOURCE_ROOT; };
+		62C3D1D015AE2BF900DA97B7 /* TRFavorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRFavorite.m; path = Trender/TRFavorite.m; sourceTree = SOURCE_ROOT; };
+		62C3D1D115AE2BF900DA97B7 /* TRHashtag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRHashtag.h; path = Trender/TRHashtag.h; sourceTree = SOURCE_ROOT; };
+		62C3D1D215AE2BF900DA97B7 /* TRHashtag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRHashtag.m; path = Trender/TRHashtag.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,10 +149,10 @@
 		624CE0BF15A3BF40005BFD2D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				629C130815A79B3300F27944 /* TRFavorite.h */,
-				629C130915A79B3300F27944 /* TRFavorite.m */,
-				62C3D17F15AB586B00DA97B7 /* TRHashtag.h */,
-				62C3D18015AB586B00DA97B7 /* TRHashtag.m */,
+				62C3D1CF15AE2BF900DA97B7 /* TRFavorite.h */,
+				62C3D1D015AE2BF900DA97B7 /* TRFavorite.m */,
+				62C3D1D115AE2BF900DA97B7 /* TRHashtag.h */,
+				62C3D1D215AE2BF900DA97B7 /* TRHashtag.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -228,8 +228,8 @@
 				624CE0AF15A3BED7005BFD2D /* TRAppDelegate.m in Sources */,
 				624CE0B115A3BED7005BFD2D /* TRFavoriteListViewController.m in Sources */,
 				624CE0B215A3BED7005BFD2D /* TRHashtagListViewController.m in Sources */,
-				629C130A15A79B3300F27944 /* TRFavorite.m in Sources */,
-				62C3D18115AB586B00DA97B7 /* TRHashtag.m in Sources */,
+				62C3D1D315AE2BF900DA97B7 /* TRFavorite.m in Sources */,
+				62C3D1D415AE2BF900DA97B7 /* TRHashtag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
