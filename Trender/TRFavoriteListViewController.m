@@ -54,13 +54,13 @@
     
     // !!!: don't hardcode
     TRHashtag *hashtag1 = [[TRHashtag alloc] init];
-    hashtag1.name = @"#Ron Paul";
+    hashtag1.name = @"#RonPaul";
     
     TRHashtag *hashtag2 = [[TRHashtag alloc] init];
-    hashtag2.name = @"#Mitt Romney";
+    hashtag2.name = @"#MittRomney";
     
     TRHashtag *hashtag3 = [[TRHashtag alloc] init];
-    hashtag3.name = @"#Barak Obama";
+    hashtag3.name = @"#BarakObama";
     
     NSMutableArray *hashtags1 = [[NSMutableArray alloc] initWithCapacity:3];
     [hashtags1 addObject:hashtag1];
@@ -72,10 +72,10 @@
     favorite1.name = @"Presidents";
     
     TRHashtag *hashtag4 = [[TRHashtag alloc] init];
-    hashtag4.name = @"#Buger King";
+    hashtag4.name = @"#BugerKing";
     
     TRHashtag *hashtag5 = [[TRHashtag alloc] init];
-    hashtag5.name = @"#Taco Bell";
+    hashtag5.name = @"#TacoBell";
     
     NSMutableArray *hashtags2 = [[NSMutableArray alloc] initWithCapacity:3];
     [hashtags2 addObject:hashtag4];
