@@ -52,6 +52,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     // !!!: don't hardcode
     TRHashtag *hashtag1 = [[TRHashtag alloc] init];
     hashtag1.name = @"#RonPaul";
@@ -61,6 +62,8 @@
     
     TRHashtag *hashtag3 = [[TRHashtag alloc] init];
     hashtag3.name = @"#BarakObama";
+    
+    
     
     NSMutableArray *hashtags1 = [[NSMutableArray alloc] initWithCapacity:3];
     [hashtags1 addObject:hashtag1];
