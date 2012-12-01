@@ -3,7 +3,7 @@
 //  Trender
 //
 //  Created by Michael Reneer on 7/9/12.
-//  Copyright (c) 2012 Michael Reneer. All rights reserved.
+//  Copyright (c) 2012 Trender. All rights reserved.
 //
 
 #import "TRHashtag.h"
