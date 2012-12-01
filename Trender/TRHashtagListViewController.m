@@ -193,7 +193,7 @@ static NSString *const kNameOfFavoriteListSegue = @"FavoriteListSegue";
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
-}
+}	
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *identifier = @"TRHashtagCell";
@@ -205,5 +205,21 @@ static NSString *const kNameOfFavoriteListSegue = @"FavoriteListSegue";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [self.hashtags count];
 }
+	
+#pragma mark - Protocol Method - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete){
+        
+        TRHashtag *hashtag = [self.hashtags objectAtIndex:indexPath.row];
+        //TODO:: Delete hashtag from hashtag array
+        
+        NSArray *IndexPaths =[[NSArray alloc] initWithObjects:indexPath, nil];
+        
+        [tableView deleteRowsAtIndexPaths:IndexPaths withRowAnimation:UITableViewRowAnimationFade];
+       
+    }
+}
+
 
 @end
