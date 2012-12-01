@@ -110,7 +110,6 @@ static NSString *const kNameOfFavoriteListSegue = @"FavoriteListSegue";
 
 // TODO: clean up
 - (UITableViewCell *)configureFavoriteCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     NSTimeInterval total = 0.0f;
     
     for (TRHashtag *hashtag in self.hashtags) {
@@ -119,9 +118,9 @@ static NSString *const kNameOfFavoriteListSegue = @"FavoriteListSegue";
     
     TRHashtag *hashtag = [self.hashtags objectAtIndex:indexPath.row];
     
-    NSTimeInterval ratio = (total - hashtag.timeIntervalOfLatestMentions) / (total * 2);
-    
     cell.textLabel.text = hashtag.name;
+    
+    NSTimeInterval ratio = (total - hashtag.timeIntervalOfLatestMentions) / (total * 2);
     
     if (ratio == ratio) {
         NSNumber *number = [[NSNumber alloc] initWithDouble:ratio];

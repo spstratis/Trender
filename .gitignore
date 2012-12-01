@@ -1,7 +1,4 @@
-# Xcode4
-xcuserdata
-
-# OS Generated Files
+# OS
 .DS_Store
 
 # Packages
@@ -13,3 +10,6 @@ xcuserdata
 *.rar
 *.tar
 *.zip
+
+# Xcode
+xcuserdata

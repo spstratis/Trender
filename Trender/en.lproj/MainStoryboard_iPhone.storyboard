@@ -31,7 +31,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="TRHashtagCell" textLabel="aUU-ac-5JO" detailTextLabel="wVG-Hf-wHr" style="IBUITableViewCellStyleValue1" id="EfC-bS-BrI">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="TRHashtagCell" textLabel="aUU-ac-5JO" detailTextLabel="VJP-u3-K6e" style="IBUITableViewCellStyleValue1" id="EfC-bS-BrI">
                                 <rect key="frame" x="0.0" y="46" width="320" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -45,7 +45,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wVG-Hf-wHr">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VJP-u3-K6e">
                                             <rect key="frame" x="246" y="11" width="44" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -83,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TRFavoriteCell" textLabel="dCy-Zm-fnf" style="IBUITableViewCellStyleDefault" id="f9X-5K-LM4">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" showsReorderControl="YES" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TRFavoriteCell" textLabel="dCy-Zm-fnf" style="IBUITableViewCellStyleDefault" id="f9X-5K-LM4">
                                 <rect key="frame" x="0.0" y="46" width="320" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -113,14 +113,6 @@
             <point key="canvasLocation" x="941" y="-14"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="TRFavoriteListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TRFavoriteListViewController.h"/>
-        </class>
-        <class className="TRHashtagListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TRHashtagListViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
