@@ -3,7 +3,7 @@
 //  Trender
 //
 //  Created by Michael Reneer on 7/3/12.
-//  Copyright (c) 2012 Trender. All rights reserved.
+//  Copyright (c) 2013 Trender. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -12,6 +12,6 @@
 
 @interface TRAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) UIWindow *window;
 
 @end

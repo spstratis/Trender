@@ -3,7 +3,7 @@
 //  Trender
 //
 //  Created by Michael Reneer on 7/3/12.
-//  Copyright (c) 2012 Trender. All rights reserved.
+//  Copyright (c) 2013 Trender. All rights reserved.
 //
 
 #import "TRFavorite.h"
@@ -22,11 +22,6 @@
 
 @implementation TRFavoriteListViewController
 
-#pragma mark - Instance Properties
-
-@synthesize favorites;
-@synthesize selectedFavorite;
-
 #pragma mark - Overriden Method
 
 - (void)didReceiveMemoryWarning {
@@ -38,20 +33,8 @@
     }
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-    UIDevice *device = [UIDevice currentDevice];
-    
-    if (device.userInterfaceIdiom == UIUserInterfaceIdiomPhone) {
-        return (toInterfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    }
-    else {
-        return YES;
-    }
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     
     // !!!: don't hardcode
     TRHashtag *hashtag1 = [[TRHashtag alloc] init];
@@ -62,8 +45,6 @@
     
     TRHashtag *hashtag3 = [[TRHashtag alloc] init];
     hashtag3.name = @"#BarakObama";
-    
-    
     
     NSMutableArray *hashtags1 = [[NSMutableArray alloc] initWithCapacity:3];
     [hashtags1 addObject:hashtag1];

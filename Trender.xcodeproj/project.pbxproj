@@ -7,24 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6210FFC5169B85250066B6FF /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6210FFC1169B85250066B6FF /* Localization.strings */; };
 		624CE03315A38FC0005BFD2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624CE03215A38FC0005BFD2D /* UIKit.framework */; };
 		624CE03515A38FC0005BFD2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624CE03415A38FC0005BFD2D /* Foundation.framework */; };
 		624CE03715A38FC0005BFD2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624CE03615A38FC0005BFD2D /* CoreGraphics.framework */; };
-		624CE04615A38FC0005BFD2D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624CE04415A38FC0005BFD2D /* MainStoryboard_iPhone.storyboard */; };
-		624CE04915A38FC0005BFD2D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624CE04715A38FC0005BFD2D /* MainStoryboard_iPad.storyboard */; };
 		624CE0AE15A3BED7005BFD2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 624CE0A515A3BED7005BFD2D /* main.m */; };
 		624CE0AF15A3BED7005BFD2D /* TRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 624CE0A715A3BED7005BFD2D /* TRAppDelegate.m */; };
 		624CE0B115A3BED7005BFD2D /* TRFavoriteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 624CE0AB15A3BED7005BFD2D /* TRFavoriteListViewController.m */; };
 		624CE0B215A3BED7005BFD2D /* TRHashtagListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 624CE0AD15A3BED7005BFD2D /* TRHashtagListViewController.m */; };
 		624CE0BA15A3BEE1005BFD2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 624CE0B415A3BEE1005BFD2D /* InfoPlist.strings */; };
-		624CE0BB15A3BEE1005BFD2D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624CE0B615A3BEE1005BFD2D /* MainStoryboard_iPad.storyboard */; };
-		624CE0BC15A3BEE1005BFD2D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624CE0B815A3BEE1005BFD2D /* MainStoryboard_iPhone.storyboard */; };
+		624F7D7E169B671200B18800 /* LICENSE.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 624F7D7D169B671200B18800 /* LICENSE.markdown */; };
+		62974B2016929EC700D97667 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62974B1D16929EC700D97667 /* Default-568h@2x.png */; };
+		62974B2116929EC700D97667 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 62974B1E16929EC700D97667 /* Default.png */; };
+		62974B2216929EC700D97667 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62974B1F16929EC700D97667 /* Default@2x.png */; };
+		62994B71169B999F002D9275 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62994B73169B999F002D9275 /* MainStoryboard_iPhone.storyboard */; };
 		629C12FA15A7843000F27944 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629C12F915A7843000F27944 /* Twitter.framework */; };
 		62C3D1D315AE2BF900DA97B7 /* TRFavorite.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C3D1D015AE2BF900DA97B7 /* TRFavorite.m */; };
 		62C3D1D415AE2BF900DA97B7 /* TRHashtag.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C3D1D215AE2BF900DA97B7 /* TRHashtag.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6210FFC2169B85250066B6FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Trender/en.lproj/Localization.strings; sourceTree = SOURCE_ROOT; };
 		624CE02E15A38FC0005BFD2D /* Trender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624CE03215A38FC0005BFD2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		624CE03415A38FC0005BFD2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,9 +42,13 @@
 		624CE0AC15A3BED7005BFD2D /* TRHashtagListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRHashtagListViewController.h; path = Trender/TRHashtagListViewController.h; sourceTree = SOURCE_ROOT; };
 		624CE0AD15A3BED7005BFD2D /* TRHashtagListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRHashtagListViewController.m; path = Trender/TRHashtagListViewController.m; sourceTree = SOURCE_ROOT; };
 		624CE0B515A3BEE1005BFD2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Trender/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
-		624CE0B715A3BEE1005BFD2D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Trender/en.lproj/MainStoryboard_iPad.storyboard; sourceTree = SOURCE_ROOT; };
-		624CE0B915A3BEE1005BFD2D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Trender/en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
 		624CE0BE15A3BF39005BFD2D /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = SOURCE_ROOT; };
+		624F7D7D169B671200B18800 /* LICENSE.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.markdown; sourceTree = SOURCE_ROOT; };
+		62974B1D16929EC700D97667 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Trender/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		62974B1E16929EC700D97667 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Trender/Default.png; sourceTree = SOURCE_ROOT; };
+		62974B1F16929EC700D97667 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Trender/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		62994B74169B99A3002D9275 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		62994B75169B99A9002D9275 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainStoryboard_iPhone.strings; sourceTree = "<group>"; };
 		629C12F915A7843000F27944 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		62C3D1CF15AE2BF900DA97B7 /* TRFavorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRFavorite.h; path = Trender/TRFavorite.h; sourceTree = SOURCE_ROOT; };
 		62C3D1D015AE2BF900DA97B7 /* TRFavorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRFavorite.m; path = Trender/TRFavorite.m; sourceTree = SOURCE_ROOT; };
@@ -97,7 +104,7 @@
 			children = (
 				624CE0BF15A3BF40005BFD2D /* Models */,
 				624CE05215A3904A005BFD2D /* Views */,
-				624CE05315A39051005BFD2D /* Controllers */,
+				624CE05315A39051005BFD2D /* Controllers & Controls */,
 				624CE0BD15A3BEF6005BFD2D /* Resources */,
 				624CE03915A38FC0005BFD2D /* Supporting Files */,
 			);
@@ -118,13 +125,12 @@
 		624CE05215A3904A005BFD2D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				624CE0B615A3BEE1005BFD2D /* MainStoryboard_iPad.storyboard */,
-				624CE0B815A3BEE1005BFD2D /* MainStoryboard_iPhone.storyboard */,
+				62994B73169B999F002D9275 /* MainStoryboard_iPhone.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
 		};
-		624CE05315A39051005BFD2D /* Controllers */ = {
+		624CE05315A39051005BFD2D /* Controllers & Controls */ = {
 			isa = PBXGroup;
 			children = (
 				624CE0A615A3BED7005BFD2D /* TRAppDelegate.h */,
@@ -134,13 +140,16 @@
 				624CE0AC15A3BED7005BFD2D /* TRHashtagListViewController.h */,
 				624CE0AD15A3BED7005BFD2D /* TRHashtagListViewController.m */,
 			);
-			name = Controllers;
+			name = "Controllers & Controls";
 			sourceTree = "<group>";
 		};
 		624CE0BD15A3BEF6005BFD2D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				62974B1A16929EA400D97667 /* Images */,
 				624CE0B415A3BEE1005BFD2D /* InfoPlist.strings */,
+				624F7D7D169B671200B18800 /* LICENSE.markdown */,
+				6210FFC1169B85250066B6FF /* Localization.strings */,
 				624CE0BE15A3BF39005BFD2D /* README.markdown */,
 			);
 			name = Resources;
@@ -155,6 +164,24 @@
 				62C3D1D215AE2BF900DA97B7 /* TRHashtag.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		62974B1A16929EA400D97667 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				62974B1C16929EB000D97667 /* App Icons */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		62974B1C16929EB000D97667 /* App Icons */ = {
+			isa = PBXGroup;
+			children = (
+				62974B1E16929EC700D97667 /* Default.png */,
+				62974B1F16929EC700D97667 /* Default@2x.png */,
+				62974B1D16929EC700D97667 /* Default-568h@2x.png */,
+			);
+			name = "App Icons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +212,7 @@
 			attributes = {
 				CLASSPREFIX = TR;
 				LastUpgradeCheck = 0430;
-				ORGANIZATIONNAME = "Michael Reneer";
+				ORGANIZATIONNAME = Trender;
 			};
 			buildConfigurationList = 624CE02815A38FC0005BFD2D /* Build configuration list for PBXProject "Trender" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -193,6 +220,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 624CE02315A38FC0005BFD2D;
 			productRefGroup = 624CE02F15A38FC0005BFD2D /* Products */;
@@ -209,11 +237,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624CE04615A38FC0005BFD2D /* MainStoryboard_iPhone.storyboard in Resources */,
-				624CE04915A38FC0005BFD2D /* MainStoryboard_iPad.storyboard in Resources */,
 				624CE0BA15A3BEE1005BFD2D /* InfoPlist.strings in Resources */,
-				624CE0BB15A3BEE1005BFD2D /* MainStoryboard_iPad.storyboard in Resources */,
-				624CE0BC15A3BEE1005BFD2D /* MainStoryboard_iPhone.storyboard in Resources */,
+				62974B2016929EC700D97667 /* Default-568h@2x.png in Resources */,
+				62974B2116929EC700D97667 /* Default.png in Resources */,
+				62974B2216929EC700D97667 /* Default@2x.png in Resources */,
+				624F7D7E169B671200B18800 /* LICENSE.markdown in Resources */,
+				6210FFC5169B85250066B6FF /* Localization.strings in Resources */,
+				62994B71169B999F002D9275 /* MainStoryboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,21 +266,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		624CE04415A38FC0005BFD2D /* MainStoryboard_iPhone.storyboard */ = {
+		6210FFC1169B85250066B6FF /* Localization.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
+				6210FFC2169B85250066B6FF /* en */,
 			);
-			name = MainStoryboard_iPhone.storyboard;
-			path = /Users/michaelreneer/Documents/Developer/Trender/TwitterThing;
-			sourceTree = "<absolute>";
-		};
-		624CE04715A38FC0005BFD2D /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-			);
-			name = MainStoryboard_iPad.storyboard;
-			path = /Users/michaelreneer/Documents/Developer/Trender/TwitterThing;
-			sourceTree = "<absolute>";
+			name = Localization.strings;
+			sourceTree = "<group>";
 		};
 		624CE0B415A3BEE1005BFD2D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -260,21 +282,15 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		624CE0B615A3BEE1005BFD2D /* MainStoryboard_iPad.storyboard */ = {
+		62994B73169B999F002D9275 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				624CE0B715A3BEE1005BFD2D /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		624CE0B815A3BEE1005BFD2D /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				624CE0B915A3BEE1005BFD2D /* en */,
+				62994B74169B99A3002D9275 /* Base */,
+				62994B75169B99A9002D9275 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
+			path = Trender;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
@@ -283,7 +299,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -302,7 +317,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -311,7 +327,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -323,7 +338,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -336,7 +351,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Trender/Trender-Prefix.pch";
 				INFOPLIST_FILE = "Trender/Trender-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = Trender;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -347,7 +364,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Trender/Trender-Prefix.pch";
 				INFOPLIST_FILE = "Trender/Trender-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = Trender;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

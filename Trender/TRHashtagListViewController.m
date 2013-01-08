@@ -3,7 +3,7 @@
 //  Trender
 //
 //  Created by Michael Reneer on 7/3/12.
-//  Copyright (c) 2012 Trender. All rights reserved.
+//  Copyright (c) 2013 Trender. All rights reserved.
 //
 
 #import <Twitter/Twitter.h>
@@ -14,10 +14,8 @@
 
 #pragma mark - Interface
 
-// ???: define private interface
 @interface TRHashtagListViewController ()
 
-// ???: explain why this is weak
 @property (nonatomic, weak) TRFavoriteListViewController *favoriteListController;
 
 - (UITableViewCell *)configureFavoriteCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
@@ -27,62 +25,33 @@
 
 #pragma mark - Implementation
 
-// ???: define implementation
 @implementation TRHashtagListViewController
 
 #pragma mark - Constants
 
 static NSString *const kNameOfFavoriteListSegue = @"FavoriteListSegue";
 
-#pragma mark - Instance Properties
-
-@synthesize favoriteListController;
-@synthesize hashtags;
-
 #pragma mark - Overriden Methods
 
-// ???: when the controller should handle a memory warning
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     
-    // ???: if the controllers view is not visible free up as much memory as possible
     if (![self isViewLoaded]) {
         self.hashtags = nil;
     }
 }
 
-// ???: when the device rotates the view asks the controller if it can rotate as well
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-    UIDevice *device = [UIDevice currentDevice];
-    
-    // ???: if device is iPhone rotate if not upside down
-    if (device.userInterfaceIdiom == UIUserInterfaceIdiomPhone) {
-        return (toInterfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    }
-    
-    // ??? if deivec is iPad always rotate
-    else {
-        return YES;
-    }
-}
-
-// ???: when the controller performs a segue 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     [super prepareForSegue:segue sender:sender];
     
-    // ???: could be one of many segues, so choose the correct one
     if ([segue.identifier isEqualToString:(NSString *)kNameOfFavoriteListSegue]) {
-        
-        // ???: remember the favorite list controller
         self.favoriteListController = [segue destinationViewController];
     }
 }
 
-// ???: when the controllers view will appear
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    // ???: if the favorite list controller is set, load the selected favorite object
     if (self.favoriteListController != nil) {
         TRFavorite *favorite = self.favoriteListController.selectedFavorite;
         
@@ -97,13 +66,6 @@ static NSString *const kNameOfFavoriteListSegue = @"FavoriteListSegue";
     }
     
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
-}
-
-// ???: when the controller did unload
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    
-    // ???: free up all memory
 }
 
 #pragma mark - Instance Method
