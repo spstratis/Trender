@@ -84,9 +84,12 @@
 #pragma mark - Instance Method
 
 - (UITableViewCell *)configureFavoriteCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    TRFavorite *favorite = [self.favorites objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = favorite.name;
+    if (cell != nil) {
+        TRFavorite *favorite = [self.favorites objectAtIndex:indexPath.row];
+        
+        cell.textLabel.text = favorite.name;
+    }
     
     return cell;
 }
