@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6210FFC5169B85250066B6FF /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6210FFC1169B85250066B6FF /* Localization.strings */; };
 		624CE03315A38FC0005BFD2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624CE03215A38FC0005BFD2D /* UIKit.framework */; };
 		624CE03515A38FC0005BFD2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624CE03415A38FC0005BFD2D /* Foundation.framework */; };
 		624CE03715A38FC0005BFD2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624CE03615A38FC0005BFD2D /* CoreGraphics.framework */; };
@@ -17,6 +16,7 @@
 		624CE0B215A3BED7005BFD2D /* TRHashtagListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 624CE0AD15A3BED7005BFD2D /* TRHashtagListViewController.m */; };
 		624CE0BA15A3BEE1005BFD2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 624CE0B415A3BEE1005BFD2D /* InfoPlist.strings */; };
 		624F7D7E169B671200B18800 /* LICENSE.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 624F7D7D169B671200B18800 /* LICENSE.markdown */; };
+		6265F5D316A65BBD00B33ECC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6265F5D116A65BBD00B33ECC /* Localizable.strings */; };
 		62974B2016929EC700D97667 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62974B1D16929EC700D97667 /* Default-568h@2x.png */; };
 		62974B2116929EC700D97667 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 62974B1E16929EC700D97667 /* Default.png */; };
 		62974B2216929EC700D97667 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62974B1F16929EC700D97667 /* Default@2x.png */; };
@@ -27,7 +27,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6210FFC2169B85250066B6FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Trender/en.lproj/Localization.strings; sourceTree = SOURCE_ROOT; };
 		624CE02E15A38FC0005BFD2D /* Trender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624CE03215A38FC0005BFD2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		624CE03415A38FC0005BFD2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,6 +43,7 @@
 		624CE0B515A3BEE1005BFD2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Trender/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		624CE0BE15A3BF39005BFD2D /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = SOURCE_ROOT; };
 		624F7D7D169B671200B18800 /* LICENSE.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.markdown; sourceTree = SOURCE_ROOT; };
+		6265F5D216A65BBD00B33ECC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Trender/en.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		62974B1D16929EC700D97667 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Trender/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		62974B1E16929EC700D97667 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Trender/Default.png; sourceTree = SOURCE_ROOT; };
 		62974B1F16929EC700D97667 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Trender/Default@2x.png"; sourceTree = SOURCE_ROOT; };
@@ -147,9 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				62974B1A16929EA400D97667 /* Images */,
-				624CE0B415A3BEE1005BFD2D /* InfoPlist.strings */,
+				62B2285416A65B6F007EA5FD /* Localization */,
 				624F7D7D169B671200B18800 /* LICENSE.markdown */,
-				6210FFC1169B85250066B6FF /* Localization.strings */,
 				624CE0BE15A3BF39005BFD2D /* README.markdown */,
 			);
 			name = Resources;
@@ -182,6 +181,15 @@
 				62974B1D16929EC700D97667 /* Default-568h@2x.png */,
 			);
 			name = "App Icons";
+			sourceTree = "<group>";
+		};
+		62B2285416A65B6F007EA5FD /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				624CE0B415A3BEE1005BFD2D /* InfoPlist.strings */,
+				6265F5D116A65BBD00B33ECC /* Localizable.strings */,
+			);
+			name = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,8 +250,8 @@
 				62974B2116929EC700D97667 /* Default.png in Resources */,
 				62974B2216929EC700D97667 /* Default@2x.png in Resources */,
 				624F7D7E169B671200B18800 /* LICENSE.markdown in Resources */,
-				6210FFC5169B85250066B6FF /* Localization.strings in Resources */,
 				62994B71169B999F002D9275 /* MainStoryboard_iPhone.storyboard in Resources */,
+				6265F5D316A65BBD00B33ECC /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,20 +274,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6210FFC1169B85250066B6FF /* Localization.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6210FFC2169B85250066B6FF /* en */,
-			);
-			name = Localization.strings;
-			sourceTree = "<group>";
-		};
 		624CE0B415A3BEE1005BFD2D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				624CE0B515A3BEE1005BFD2D /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6265F5D116A65BBD00B33ECC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6265F5D216A65BBD00B33ECC /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		62994B73169B999F002D9275 /* MainStoryboard_iPhone.storyboard */ = {
