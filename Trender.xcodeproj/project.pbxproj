@@ -147,8 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				62974B1A16929EA400D97667 /* Images */,
-				62B2285416A65B6F007EA5FD /* Localization */,
+				624CE0B415A3BEE1005BFD2D /* InfoPlist.strings */,
 				624F7D7D169B671200B18800 /* LICENSE.markdown */,
+				6265F5D116A65BBD00B33ECC /* Localizable.strings */,
 				624CE0BE15A3BF39005BFD2D /* README.markdown */,
 			);
 			name = Resources;
@@ -181,15 +182,6 @@
 				62974B1D16929EC700D97667 /* Default-568h@2x.png */,
 			);
 			name = "App Icons";
-			sourceTree = "<group>";
-		};
-		62B2285416A65B6F007EA5FD /* Localization */ = {
-			isa = PBXGroup;
-			children = (
-				624CE0B415A3BEE1005BFD2D /* InfoPlist.strings */,
-				6265F5D116A65BBD00B33ECC /* Localizable.strings */,
-			);
-			name = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
